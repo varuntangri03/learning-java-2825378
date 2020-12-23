@@ -1,7 +1,7 @@
 $function = "TIME_SERIES_INTRADAY"
 $stockticker = "NSEI"
 $period = "60min"
-$apiKey = "TWLRGI3V39UODRXW"
+$apiKey = "***************"
 $baseuri = "https://www.alphavantage.co/query?function="
 $callUri = $baseuri + $function +"&symbol=$stockticker&interval=$period&outputsize=full&apikey=$apiKey"
 $Query = Invoke-WebRequest -Uri $callUri -ContentType "application/json" -UseBasicParsing
